@@ -1,0 +1,12 @@
+{
+  "main": [
+    {
+      "name": "Info",
+      "url": "/info/info"
+    },
+    {
+      "name": "Schedule",
+      "url": "/info/schedule"
+    }
+  ]
+}

@@ -1,0 +1,107 @@
+---
+// src/components/Timeline.astro
+const timelineEvents = [
+  {
+    date: "Jan 2020",
+    title: "Project Started",
+    description: "Initial concept and planning phase",
+  },
+  {
+    date: "Jun 2020",
+    title: "First Release",
+    description: "Launched MVP to select users",
+  },
+  {
+    date: "Dec 2020",
+    title: "Major Update",
+    description: "Added key features based on feedback",
+  },
+  {
+    date: "Mar 2021",
+    title: "Expansion",
+    description: "Opened to international markets",
+  },
+  { date: "Sep 2021", title: "Milestone", description: "Reached 100k users" },
+  {
+    date: "Jan 2022",
+    title: "New Version",
+    description: "Complete redesign and rebrand",
+  },
+];
+---
+
+<div class="timeline">
+  <div class="timeline__component">
+    <div class="timeline__date right">Aug 30, 2017</div>
+  </div>
+  <div class="timeline__middle">
+    <div class="point b4"></div>
+  </div>
+  <div class="timeline__component bg">
+    <h2 class="title">Card title</h2>
+    <p class="paragraph">Paragraph</p>
+  </div>
+
+  <div class="timeline__component bg">
+    <h2 class="title">Card title</h2>
+    <p class="paragraph">Paragraph</p>
+  </div>
+  <div class="timeline__middle">
+    <div class="point"></div>
+  </div> 
+  <div class="timeline__component">
+    <div class="timeline__date">Aug 30, 2017</div>
+  </div>
+</div>
+
+<style>
+  .timeline__date {
+
+  }
+  .timeline {
+    margin: 0 auto;
+    max-width: 900px;
+    padding: 25px;
+    display: grid;
+    grid-template-columns: 1fr 3px 1fr;
+    color: var(--color-text);
+  }
+  .point {
+    position: absolute;
+    top: 6px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 15px;
+    height: 15px;
+    background: var(--color-primary);
+    border-radius: 50%;
+    &.b4 {
+      top: 0;
+    }
+  }
+  .timeline__middle {
+    position: relative;
+    background: var(--color-primary);
+    margin: 0;
+    &:nth-child(2) {
+      margin: 6px 0 0 0;
+    }
+  }
+  .timeline__component {
+    margin: 0 20px 20px 20px;
+    position: relative;
+  }
+  .timeline__date {
+    /* padding: 0 20px 0 20px; */
+  }
+  .timeline__component .right {
+    text-align: right;
+  }
+  .bg {
+    padding: 1.5em;
+    margin: 1.5em;
+    background: var(--color-bg-secondary);
+    box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+  }
+</style>

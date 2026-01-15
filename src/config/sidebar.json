@@ -1,0 +1,10 @@
+{
+  "main": [
+    {
+      "label": "Course Overview",
+      "autogenerate": {
+        "directory": "info"
+      }
+    }
+  ]
+}

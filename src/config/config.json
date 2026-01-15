@@ -1,0 +1,25 @@
+{
+  "site": {
+    "title": "CS 6241",
+    "logo": "/images/logo.png"
+  },
+
+  "settings": {
+    "search": true,
+    "theme_switcher": true
+  },
+
+  "params": {
+    "footer_contact": {
+      "enable": true,
+      "action": "#"
+    },
+    "copyright": "Made with Astro and a theme by <a class=\"text-primary hover:underline no-underline\" href=\"https://themefisher.com\" target=\"_blank\" rel=\"noopener\" aria-label=\"Themefisher\">Themefisher</a>"
+  },
+
+  "navigation_button": {
+    "enable": true,
+    "label": "Get Started",
+    "link": "syllabus"
+  }
+}

@@ -1,0 +1,267 @@
+---
+title: CS 6241 Compiler Design
+description: Get started building your docs site with DocKit.
+template: splash
+# hero:
+#   title: |
+#     CS 6241 
+#     <span class="light-text">Compiler Design</span>
+#   tagline: Discover tips, resources, and guidance to maximize experience with DocKit.
+---
+
+import Section from "~/components/Section.astro";
+import Card from "~/components/user-components/NewCard.astro";
+import Grid from "~/components/user-components/Grid.astro";
+import Button from "~/components/user-components/Button.astro";
+
+{/* // import Timeline from "~/components/user-components/Timeline.astro"; */}
+import CircularTimeline from "~/components/user-components/CircularTimeline.astro";
+
+{/* <Section title="Powerful features */}
+{/* <span class='light-text'>for documentations</span>" description="Explore the tools and design choices that make documentation efficient."> */}
+{/* <Section> */}
+<p class='text-xl' style='color: var(--sl-color-white)'>Compilers have always played a key role in the backbone of computing systems.</p>
+
+<p class='text-xl'>This course takes you through the foundational concepts of optimizing compilers and helps you get your hands on a production compiler toolchain, namely, our dear LLVM.  </p>
+
+import { Icon } from '@astrojs/starlight/components';
+
+
+
+<div style='display: flex; margin: auto; padding-top: 2em; justify-content: center; align-items: center; flex-wrap: wrap; gap: 1em'>
+<Button
+    label="Syllabus"
+    link="/info/syllabus"
+    variant="primary"
+  />
+  <Button
+    label="Course Schedule"
+    link="/info/schedule"
+    variant="outline-primary"
+  />
+</div>
+<div class='mb-16'></div>
+
+<Grid columns={2}>
+  <Card title="Prerequisites" size="sm"  iconColor="#FF8585">
+    Students should have taken UG class in compilers (CS 4240 or equivalent) and
+should have top notch programming skills (C++), ability to deal (navigate and
+modify) with large scale software and knowledge of data-structures. Others must
+take permission of the instructor.
+  </Card>
+  <Card title="Is it fit for this semester?" size="sm"  iconColor="#FF8585">
+    Similar to other systems courses, this course is intense (not meant
+for faint hearted in terms of understanding large scale software and programming
+work) and one should stay on top of things in it. Doing this class in conjunction
+with other heavy classes is a strict no-no and instructor very strongly discourages
+this.
+  </Card>
+</Grid>
+
+<CircularTimeline />
+
+{/*
+<Grid columns={4}>
+  <Card title="Well organized" icon="substack" iconColor="#FF8585">
+    The transparency of our data will help you make the informed decisions you need to.
+  </Card>
+  <Card title="Lightning fast" icon="seti:vite" iconColor="#7BE1A4">
+  Our performance optimization ensures quick load times and a smooth user experience.
+  </Card>
+
+<Card title="Powerful search" icon="seti:code-search" iconColor="#FFD97B">
+  Our search functionality helps users find information quickly and easily.
+</Card>
+<Card title="Very customized" icon="seti:config" iconColor="#979BFF">
+  Tailor the documentation to fit your brand and project needs with ease.
+</Card>
+
+ </Grid> */}
+{/* </Section> */}
+
+
+import HeroTabs from "~/components/HeroTabs.astro";
+import HeroTabsItem from "~/components/HeroTabsItem.astro";
+
+
+import ListCard from "~/components/user-components/ListCard.astro";
+import LinkButton from "~/components/LinkButton.astro";
+
+
+{/* 
+<Section title="Feature topics for <span class='light-text'>our documentation</span>" description="Explore our featured topics and get an idea of our capabilities.">
+
+<Grid columns={3}>
+<ListCard title="UI Components" number="15">
+- [Buttons & Links](/contents/components/using-components/)
+- [Navigation Menus](/contents/components/using-components/)
+- [Cards & Panels](/contents/components/using-components/)
+- [Tabs & Accordions](/contents/components/using-components/)
+- [Forms & Inputs](/contents/components/using-components/)
+- [Tables & Lists](/contents/components/using-components/)
+
+<LinkButton href="/contents/components/using-components/" variant="text" className="mt-6 mb-8 ml-4">View all components</LinkButton>
+</ListCard>
+
+<ListCard title="Content Writing" imageIcon="/src/assets/content.svg" number="18">
+- Markdown Basics
+- MDX Components
+- Code Examples
+- API Documentation
+- Tutorial Writing
+- Best Practices
+
+<LinkButton href="/contents/editing/add-new-doc/" variant="text" className="mt-6 mb-8 ml-4">View writing guide</LinkButton>
+</ListCard>
+
+<ListCard title="Page Layouts" imageIcon="/src/assets/layouts.svg" number="8">
+- Homepage Templates
+- Documentation Pages
+- API Reference Layout
+- Tutorial Structure
+- Landing Pages
+- Error Pages
+
+<LinkButton href="/getting-started/introduction/overview/" variant="text" className="mt-6 mb-8 ml-4">View layouts</LinkButton>
+</ListCard>
+</Grid>
+
+<Grid columns={3}>
+
+<ListCard title="Code Syntax" imageIcon="/src/assets/code-block.svg" number="10" image="/src/assets/code-image.png">
+
+- Syntax Highlighting
+- Line Numbers
+- Copy Button
+- Language Labels
+- Diff Highlighting
+- File Names
+
+<LinkButton
+  href="/getting-started/introduction/overview/"
+  variant="text"
+  className="mt-6 mb-8 ml-4"
+>
+  View code guide
+</LinkButton>
+
+</ListCard>
+
+<ListCard title="Version History" imageIcon="/src/assets/changelogs.svg" number="25">
+
+- Release Notes
+- Feature Updates
+- Bug Fixes
+- Breaking Changes
+- Migration Guides
+- Deprecated Features
+
+<LinkButton
+  href="/getting-started/introduction/overview/"
+  variant="text"
+  className="mt-6 mb-8 ml-4"
+>
+  View changelog
+</LinkButton>
+
+</ListCard>
+
+</Grid>
+  */}
+{/* 
+import AccordionContainer from "~/components/AccordionContainer.astro";
+import Accordion from "~/components/Accordion.astro";
+
+<Section
+  title="Have question? <span class='light-text'>We’re here to help</span>"
+  description="Get answers to the general questions people have asked."
+> */}
+{/* 
+<AccordionContainer tabList={
+  [
+    {
+      type: 'basic',
+      title: 'Getting Started',
+      subtitle:'Some questions about how to start.',
+      icon: "rocket"
+
+    },
+    {
+      type: 'setting',
+      title: 'Settings & Configurations',
+      subtitle:'How to configure our documentation.',
+      icon: "settings"
+
+    },
+    {
+      type: 'help',
+      title: 'Help & Support',
+      subtitle:'What type of support we provide.',
+      icon: "support"
+
+    }
+
+]
+}> */}
+{/* 
+<Accordion
+  question="How do I get started with Dockit?"
+  answer="Simply install our template, import the components you need, and start documenting your project. The setup process takes just a few minutes."
+  type="basic"
+/>
+<Accordion
+  question="What are the system requirements?"
+  answer="Dockit requires Node.js 18+ and works with any modern web browser. It's built on Astro and supports all major operating systems."
+  type="basic"
+/>
+<Accordion
+  question="Is Dockit free to use?"
+  answer="Yes, Dockit is completely free and open source. You can use it for personal and commercial projects without any limitations."
+  type="basic"
+/>
+<Accordion
+  question="Can I customize the design?"
+  answer="Absolutely! Dockit is highly customizable with Tailwind CSS. You can modify colors, layouts, components, and add your own branding."
+  type="basic"
+/>
+
+<Accordion
+  question="How do I change the theme colors?"
+  answer="You can customize theme colors by modifying the CSS custom properties in your theme configuration file or through the Tailwind config."
+  type="setting"
+/>
+<Accordion
+  question="Can I add custom components?"
+  answer="Yes, you can create and add custom Astro components. Simply place them in the components folder and import them where needed."
+  type="setting"
+/>
+<Accordion
+  question="How do I configure navigation?"
+  answer="Navigation is configured through the menu.json file in your config folder. You can add, remove, or reorder menu items as needed."
+  type="setting"
+/>
+<Accordion
+  question="Can I use my own domain?"
+  answer="Yes, you can deploy Dockit to any hosting service and use your custom domain. We provide deployment guides for popular platforms."
+  type="setting"
+/>
+
+<Accordion
+  question="Where can I get help?"
+  answer="You can get help through our GitHub discussions, documentation, or community Discord server. We also provide email support for complex issues."
+  type="help"
+/>
+<Accordion
+  question="How do I report bugs?"
+  answer="Please report bugs through our GitHub issues page with detailed information about the problem and steps to reproduce it."
+  type="help"
+/>
+<Accordion
+  question="Do you offer premium support?"
+  answer="While Dockit is free, we offer premium consulting services for custom implementations and enterprise deployments."
+  type="help"
+/> */}
+
+{/* </AccordionContainer>j */}
+
+{/* </Section> */}
