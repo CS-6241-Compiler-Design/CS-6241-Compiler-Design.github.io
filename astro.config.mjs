@@ -19,6 +19,7 @@ export const locales = locals
 
 // https://astro.build/config
 export default defineConfig({
+  site: "https://cs-6241-compiler-design.github.io/",
   outDir: './docs',
   image: {
     service: { entrypoint: "astro/assets/services/noop" },
