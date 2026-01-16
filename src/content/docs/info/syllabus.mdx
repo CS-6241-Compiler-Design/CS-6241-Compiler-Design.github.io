@@ -1,5 +1,70 @@
 ---
-title: Syllabus & Course Resources
-description: Download the syllabus and access course resources for CS 6241 - Compiler Design.
+title: Course Syllabus and Materials
+description: Syllabus and course resources for CS 6241 - Compiler Design.
 ---
 
+This course is a first graduate course on compiler optimization
+techniques that are commonly used at intermediate level and in the backend. The
+following are the objectives of this course:
+
+- In depth understanding of foundational concepts of optimizing compilers.
+- Hands-on experience in building optimizations inside a real-world open
+source compiler called LLVM.
+- Understanding of current research results in one or more areas of optimizing compilers
+
+We will achieve these goals by in-depth discussion of classical and modern compiler
+analyses and optimizations. The course starts with a discussion of basic dataflow and
+control flow analysis and building of necessary information at various levels of
+intermediate forms through analysis. The techniques covered include first bit-vector
+analysis followed by discussion of SSA form. Special analysis based on SSA form
+(such as global value numbering) is discussed next. Finally, advanced dataflow
+problems such as partial redundancy elimination (PRE) are discussed. We then shift
+our attention to data dependence analysis used in modern high performance
+compilers and its use in loop transformations for optimizing for memory hierarchy.
+We will also talk about classical vectorization and SIMDization techniques relevant
+to modern multi-cores. We will also discuss a bit of code generation optimizations
+involving advanced register allocation, rematerialization, live range splitting,
+coalescing and coloring. We will attempt to cover two important emerging areas
+through papers in the second half of the course : (a) optimizing for embedded
+processors, (b) compiler based techniques for multi-cores. A key part of the course
+involves a large project (to be done in teams of 2 students) based on an open source
+compiler (LLVM) to develop optimizations. After successfully completing this
+course, it is expected that students will be ready to explore research literature on one
+or more topics in compilers.
+
+
+### Textbooks
+- Aho Lam Sethi Ullman “Compilers : Principles, Techniques and Tools”
+(Dragon Book), 2nd Edition (Required)
+- Optimizing Compilers for Modern Architectures: A Dependence-based
+Approach by Randy Allen (Author), Ken Kennedy (Author), Morgan
+Kauffman Publishers, ISBN 1558602860 (Supplemental)
+- Advanced Compiler Design and Implementation by Steven Muchnik,
+Academic Press, ISBN 1-55860-320-4 (Supplemental)
+
+### Outline
+Review and Code Generation : Organization, Theory and practice behind
+compiler phases and Code Generation, Intermediate Forms
+- Basics of control flow analyses: Basic blocks, data and control flow graphs,
+loops, reducible and irreducible graphs, regions.
+- Data Flow analysis : Local and global data flow problems, iterative solutions
+and efficient algorithms
+- Static Single Assignment form, Sparse conditional constant propagation,
+global value numbering.
+- Data dependence analysis and optimizations: Data dependence tests,
+Subscripted variables, Necessary and sufficient conditions, Array region
+analysis, Bounds checking and removal.
+- Theory of vectorization, SIMDization vs. Vectorization, Vector and sub-ward
+level registers, Data layouts, Sub-word level parallelism,
+- Loop restructuring: Simple transformations, loop fission, fusion, reversal,
+interchange, skewing, linear transformations, tiling
+- Optimizing for locality: Instruction cache optimizations, code layout issues,
+data cache optimizations, general tiling problem with single and multiple
+references, fission and fusion for data locality.
+- Register allocation: register allocation and assignment, local allocators,
+coloring based allocators, splitting based allocators, introduction to register
+allocation of for modern processors (speculative loads, register files etc.)
+- Emerging topics : Embedded processors : Compact code generation, power
+efficient code gen, multi-criteria optimizations
+- Optional topic (time permitting): Topics in Parallelizing Compilers
+(Multicores and traditional parallelization techniques)

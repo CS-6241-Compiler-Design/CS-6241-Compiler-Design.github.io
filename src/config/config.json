@@ -18,8 +18,8 @@
   },
 
   "navigation_button": {
-    "enable": true,
-    "label": "Get Started",
-    "link": "syllabus"
+    "enable": false,
+    "label": "Schedule",
+    "link": "info/schedule"
   }
 }

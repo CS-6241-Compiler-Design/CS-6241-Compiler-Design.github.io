@@ -2,9 +2,25 @@
   "main": [
     {
       "label": "Course Overview",
-      "autogenerate": {
-        "directory": "info"
-      }
+      "items": [
+        {
+          "label": "Schedule",
+          "slug": "info/schedule"
+        },
+        {
+          "label": "Syllabus",
+          "slug": "info/syllabus"
+        },
+        {
+          "label": "Course Information",
+          "slug": "info/info"
+        }
+      ]
+    },
+    {
+      "label": "Homework",
+      "collapsed": true,
+      "autogenerate": { "directory": "homework", "collapsed": true}
     }
   ]
 }
