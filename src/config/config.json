@@ -18,8 +18,8 @@
   },
 
   "navigation_button": {
-    "enable": false,
-    "label": "Schedule",
-    "link": "info/schedule"
+    "enable": true,
+    "label": "Homework 0",
+    "link": "homework/homework-0"
   }
 }
