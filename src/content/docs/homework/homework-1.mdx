@@ -1,0 +1,43 @@
+---
+title: Homework 1
+description: Instructions for Homework 1 of CS 6241 - Compiler Design.
+sidebar:
+  badge:
+    text: Active
+    variant: success
+---
+
+import { Badge } from '@astrojs/starlight/components';
+
+<Badge text="Deadline: 8th Feb 2026" size="medium" variant='caution'/>
+
+---
+
+import { LinkCard } from '@astrojs/starlight/components';
+
+<LinkCard title="Go to the Homework 1 repo" href="https://github.gatech.edu/CS6241/Homework1/"
+description="Repository for homework 1 on GitHub."/>
+
+
+import { CardGrid } from '@astrojs/starlight/components';
+
+<CardGrid>
+
+<Aside type="danger" title="Problem 1.3 is in the works">
+  The benchmark for Problem 1.3 is being assembled and will be made available soon.
+  You can start working on the other problems in the interim. Thanks for your patience!
+</Aside>
+
+<Aside type="note" title="Gradescope autograder">
+The autograder for Homework 1 will be up from Monday.
+</Aside>
+
+</CardGrid>
+The goal of homework 1 is to get us familiar with the LLVM API and writing simple passes. You will implement a few basics passes that use the loop analyses from LLVM.
+
+
+import { Aside } from '@astrojs/starlight/components';
+
+> For iterating over functions, ignore functions that are declarations (i.e., have no body). You can check this using the `isDeclaration()` method on the `Function` class.
+
+> This will be updated with more references and clarifications soon.
